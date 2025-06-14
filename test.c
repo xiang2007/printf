@@ -3,5 +3,6 @@
 
 int	main()
 {
-	ft_printpercent();
+	printf("%d\n",ft_putdec(4294967295));
+	printf("\n");
 }

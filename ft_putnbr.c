@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-void	ft_putnbr(int nbr)
+int	ft_putint(int nbr)
 {
 	char 	*dest;
 	int		index;
@@ -29,11 +29,12 @@ void	ft_putnbr(int nbr)
 	size = ft_count(nbr);
 	dest = (char *)malloc(ft_count(nbr));
 	if (!dest)
-		return ;
+		return (0);
 	dest = ft_itoa(nbr);
 	while (index < size)
 	{
 		write(1, &dest[index], 1);
 		index++;
 	}
+	return (size);
 }

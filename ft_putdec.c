@@ -1,26 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_count.c                                         :+:      :+:    :+:   */
+/*   ft_putdec.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wshou-xi <wshou-xi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/14 14:31:30 by wshou-xi          #+#    #+#             */
-/*   Updated: 2025/06/14 18:09:55 by wshou-xi         ###   ########.fr       */
+/*   Created: 2025/06/14 17:30:31 by wshou-xi          #+#    #+#             */
+/*   Updated: 2025/06/14 18:31:19 by wshou-xi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_count(unsigned int n)
-{
-	int	size;
+#include "ft_printf.h"
 
-	size = 0;
-	if (n == 0)
-		return (1);
-	while (n > 0)
+int	ft_putdec(unsigned int nbr)
+{
+	char 	*dest;
+	int		index;
+	int		size;
+
+	index = 0;
+	size = ft_count(nbr);
+	dest = (char *)malloc(ft_count(nbr));
+	if (!dest)
+		return (0);
+	dest = ft_itoa(nbr);
+	while (index < size)
 	{
-		n /= 10;
-		size++;
+		write(1, &dest[index], 1);
+		index++;
 	}
-	return (size);
+	return (index);
 }

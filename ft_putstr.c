@@ -12,13 +12,13 @@
 
 #include "ft_printf.h"
 
-void	ft_putstr(const char *c)
+int	ft_putstr(const char *c)
 {
 	int	size;
 	int	index;
 
 	if (!c)
-		return ;
+		return (-1);
 	index = 0;
 	size = ft_strlen(c);
 	while (index < size)
@@ -27,4 +27,5 @@ void	ft_putstr(const char *c)
 			write(1, &c[index], 1);
 		index++;
 	}
+	return (size);
 }

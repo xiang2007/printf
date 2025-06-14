@@ -6,13 +6,14 @@
 /*   By: wshou-xi <wshou-xi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/14 15:55:24 by wshou-xi          #+#    #+#             */
-/*   Updated: 2025/06/14 15:58:10 by wshou-xi         ###   ########.fr       */
+/*   Updated: 2025/06/14 18:24:21 by wshou-xi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_printpercent()
+int	ft_printpercent()
 {
 	write(1, "%", 1);
+	return (1);
 }
