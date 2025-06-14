@@ -1,31 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_putint.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/10 18:37:31 by marvin            #+#    #+#             */
-/*   Updated: 2025/06/10 18:37:31 by marvin           ###   ########.fr       */
+/*   Created: 2025/06/11 06:35:55 by marvin            #+#    #+#             */
+/*   Updated: 2025/06/11 06:35:55 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-
-#include <stddef.h>
-#include <stdarg.h>
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-void	ft_putchar(char c);
-size_t	ft_strlen(const char *str);
-void	ft_putstr(const char *c);
-int		ft_isprint(int c);
-char	*ft_itoa(int n);
-void	ft_putnbr(int nbr);
-void	ft_putint(int nbr);
-
-#endif
+void	ft_putint(float nbr)
+{
+	
+}

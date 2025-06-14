@@ -5,25 +5,22 @@ RM = rm -f
 
 SRC = $(shell find -name "*.c")
 OBJ = $(SRC:.c=.o)
-NAME = libft.a
+NAME = a.out
+AFILE = libft.a
 
-$(NAME): $(OBJ)
-	$(AR) $(NAME) $(OBJ)
+$(NAME):
+	$(CC) $(CFLAGS) $(SRC) $(AFILE)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 .PHONY: clean fclean re all cc
 
-cc:
-	$(CC) $(CFLAGS) $(SRC) $(NAME)
-
 clean:
-	$(RM) $(OBJ)
+	$(RM) $(NAME)
 
 fclean:	clean
 
 all: $(NAME)
-	$(AR) $(NAME) $(OBJ)
 
 re: fclean all
