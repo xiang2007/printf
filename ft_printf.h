@@ -25,7 +25,10 @@ size_t	ft_strlen(const char *str);
 void	ft_putstr(const char *c);
 int		ft_isprint(int c);
 char	*ft_itoa(int n);
-void	ft_putnbr(int nbr);
+void	ft_putdec(float nbr);
 void	ft_putint(int nbr);
+int		ft_count(int n);
+void	ft_putlowhex(unsigned int nbr);
+void	ft_putuphex(unsigned int nbr);
 
 #endif

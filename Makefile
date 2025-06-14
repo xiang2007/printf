@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Werror -Wextra -I./include
+CFLAGS = -Wall -Werror -Wextra
 AR = ar rcs
 RM = rm -f
 

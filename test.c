@@ -3,6 +3,6 @@
 
 int	main()
 {
-	printf("%f\n",-1);
-	ft_putnbr(-1.1);
+	ft_putuphex(4294967295);
+	printf("\n");
 }
