@@ -30,5 +30,6 @@ void	ft_putint(int nbr);
 int		ft_count(int n);
 void	ft_putlowhex(unsigned int nbr);
 void	ft_putuphex(unsigned int nbr);
+void	ft_printpercent();
 
 #endif

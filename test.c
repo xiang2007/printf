@@ -3,6 +3,5 @@
 
 int	main()
 {
-	ft_putuphex(4294967295);
-	printf("\n");
+	ft_printpercent();
 }
